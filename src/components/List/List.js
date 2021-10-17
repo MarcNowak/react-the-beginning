@@ -1,14 +1,25 @@
 import React from 'react';
 import styles from './List.scss';
 import Hero from '../Hero/Hero';
+import PropTypes from 'prop-types';
 
 class List extends React.Component {
+  static propTypes = {
+    title: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
+  }
+
+  static defaultProps = {
+    children: <p>I can do all the things!!!</p>,
+  }
+  
   render() {
     return (
       <section className={styles.component}>
-        {/* <h1 className={styles.title}>My first React List</h1> */}
-        {/* <h2 className={styles.subtitle}>Things to do</h2> */}
-        <Hero />
+        <Hero titleText={this.props.title} />
+        <div className={styles.description}>
+          {this.props.children}
+        </div>
       </section>
     )
   }
