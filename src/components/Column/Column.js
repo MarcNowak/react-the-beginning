@@ -4,13 +4,14 @@ import styles from './Column.scss'
 
 class Column extends React.Component {
   static propTypes = {
-    titleColumn: PropTypes.node.isRequired,
+    columnTitle: PropTypes.node.isRequired,
   }
 
   render() {
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{props.titleColumn}</h3>
+        <h3 className={styles.title}>{1}</h3>
+        <h3 className={styles.title}>{2}</h3>
       </section>
     );
   }

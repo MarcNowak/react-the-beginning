@@ -9,7 +9,7 @@ class List extends React.Component {
     title: PropTypes.node.isRequired,
     children: PropTypes.node.isRequired,
     image: PropTypes.string.isRequired,
-    titleColumn: PropTypes.node.isRequired,
+    // columnTitle: PropTypes.node.isRequired,
   }
 
   static defaultProps = {
@@ -27,9 +27,9 @@ class List extends React.Component {
           {this.props.children}
         </div>
         <div className={styles.column}>
-          <Column titleColumn1={this.props.title} />
-          <Column titleColumn2={this.props.title} />
-          <Column titleColumn3={this.props.title} />
+          <Column columnTitle={this.props.title} />
+          <Column columnTitle={this.props.title} />
+          <Column columnTitle={this.props.title} />
         </div>
       </section>
     )
