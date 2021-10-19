@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import styles from './Column.scss'
 
 class Column extends React.Component {
+  static propTypes = {
+    columnTitle: PropTypes.node.isRequired,
+  }
 
   render() {
     return (
