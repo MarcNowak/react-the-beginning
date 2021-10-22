@@ -4,6 +4,7 @@ import styles from './Column.scss'
 import Card from '../Card/Card';
 import { listData, settings } from '../../data/dataStore';
 import Creator from '../Creator/Creator';
+import Icon from '../Icon/Icon';
 
 class Column extends React.Component {
   state = {
@@ -13,6 +14,7 @@ class Column extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
     cards: PropTypes.array,
+    icon: PropTypes.string.isRequired,
   }
 
   addCard(title) {
@@ -32,7 +34,7 @@ class Column extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}><span className={styles.icon}>{listData.columns.icon}</span>{this.props.title}</h3>
+        <h3 className={styles.title}><span className={styles.icon}><Icon image={this.props.icon}/></span>{this.props.title}</h3>
 
         <div className={styles.cards}>
           {this.state.cards.map(({ key, ...cardsProps }) => (
