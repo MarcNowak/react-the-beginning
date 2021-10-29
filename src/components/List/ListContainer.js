@@ -3,7 +3,7 @@ import List from './List';
 import { getColumnsForList, createActionAddColumn } from '../../redux/columnsRedux';
 
 const mapStateToProps = (state, props) => ({
-  // columns: getColumnsForList(state, props.id),
+  columns: getColumnsForList(state, props.id),
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
@@ -13,5 +13,5 @@ const mapDispatchToProps = (dispatch, props) => ({
   })),
 });
 
-export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
+// export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
 export default connect(mapStateToProps, mapDispatchToProps)(List);
