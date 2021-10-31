@@ -1,9 +1,7 @@
 // selectors
 
 // getSearchString
-export const getSearchString = state => ({
-  searchString: state.app.columns,
-});
+export const getSearchString = state => state.searchString;
 
 // countVisibleCards
 export const countVisibleCards = ({cards, searchString}) => cards.filter(card => new RegExp(searchString, 'i').test(card.title)).length;
