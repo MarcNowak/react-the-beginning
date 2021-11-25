@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import List from '../List/ListContainer';
 import Search from '../Search/SearchContainer';
 
-// import { pageContents, listData } from '../../data/dataStore';
-
 class Home extends React.Component {
   static propTypes = {
     title: PropTypes.node,
@@ -25,11 +23,6 @@ class Home extends React.Component {
         {lists.map(listData => (
           <List key={listData.id} {...listData} />
         ))}
-
-        {/*
-        <List {...listData} />
-        */}
-
       </main>
     );
   }
