@@ -25,8 +25,6 @@ export const infoSubPage = {
   navText: 'Info',
   navTitle: 'Info',
   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
@@ -34,8 +32,6 @@ export const faqSubPage = {
   navText: 'FAQ',
   navTitle: 'FAQ',
   content: 'Fusce quis augue vel urna vestibulum aliquam. Morbi faucibus faucibus volutpat. Suspendisse potenti. Proin quis augue mi. Quisque consequat sodales massa facilisis imperdiet. Mauris nec massa lacus. Quisque in aliquam sapien. Sed id sapien nulla. Etiam metus ex, elementum eget arcu eget, mollis ullamcorper augue. Quisque convallis arcu quis tortor feugiat suscipit. Ut dolor magna, viverra et efficitur mollis, mollis vitae ante.',
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
