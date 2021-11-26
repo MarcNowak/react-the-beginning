@@ -6,7 +6,7 @@ import Hero from '../Hero/Hero';
 const Info = () => (
   <Container>
     <Hero />
-    <h2>{infoSubPage.title}</h2>
+    <h2>{infoSubPage.navTtitle}</h2>
     <p>{infoSubPage.content}</p>
   </Container>
 );
