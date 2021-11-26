@@ -7,7 +7,6 @@ const Faq = () => (
   <Container>
     <Hero titleText={faqSubPage.navTitle} image={faqSubPage.image} />
     
-    <h2>{faqSubPage.navTitle}</h2>
     <p>{faqSubPage.content}</p>
   </Container>
 );

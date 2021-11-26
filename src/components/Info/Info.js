@@ -7,7 +7,6 @@ const Info = () => (
   <Container>
     <Hero titleText={infoSubPage.navTitle} image={infoSubPage.image} />
 
-    <h2>{infoSubPage.navTitle}</h2>
     <p>{infoSubPage.content}</p>
   </Container>
 );
