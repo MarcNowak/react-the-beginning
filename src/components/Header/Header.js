@@ -8,8 +8,8 @@ import { settings, faqSubPage, infoSubPage, mainPage } from '../../data/dataStor
 class Header extends React.Component {
 
   render() {
-    const {icon} = settings.headerIcon;
-   
+    const { icon } = settings.headerIcon;
+
     return (
       <header className={styles.component}>
         <Container>

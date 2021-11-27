@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './ListLink.scss';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
-import {settings} from '../../data/dataStore';
+import { Link } from 'react-router-dom';
+import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 
-const ListLink = ({id, title, image, description}) => (
+const ListLink = ({ id, title, image, description }) => (
   <Link to={`/list/${id}`} className={styles.link}>
     <section className={styles.component}>
       <div className={styles.text}>
