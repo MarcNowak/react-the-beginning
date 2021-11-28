@@ -4,14 +4,14 @@ import styles from './Column.scss';
 import Card from '../Card/Card';
 import { settings } from '../../data/dataStore';
 // import Creator from '../Creator/Creator';
-import Icon from '../Icon/Icon';
+// import Icon from '../Icon/Icon';
 
 class SearchResults extends React.Component {
 
   static propTypes = {
     title: PropTypes.node.isRequired,
     cards: PropTypes.array,
-    icon: PropTypes.string.isRequired,
+    // icon: PropTypes.string.isRequired,
     // addCard: PropTypes.func,
   }
 
@@ -20,11 +20,11 @@ class SearchResults extends React.Component {
   }
 
   render() {
-    const { title, icon, cards } = this.props;
+    const { cards } = this.props;
 
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}><span className={styles.icon}><Icon name={ icon } /></span>{ title }</h3>
+        {/* <h3 className={styles.title}><span className={styles.icon}><Icon name={ icon } /></span>{ title }</h3> */}
       
         <div className={styles.cards}>
           {cards.map(cardData => (
