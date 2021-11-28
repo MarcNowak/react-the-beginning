@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Column.scss';
+import styles from '../Column/Column.scss';
 import Card from '../Card/Card';
 import { settings } from '../../data/dataStore';
 // import Creator from '../Creator/Creator';
@@ -9,7 +9,7 @@ import { settings } from '../../data/dataStore';
 class SearchResults extends React.Component {
 
   static propTypes = {
-    title: PropTypes.node.isRequired,
+    title: PropTypes.node,
     cards: PropTypes.array,
     // icon: PropTypes.string.isRequired,
     // addCard: PropTypes.func,
