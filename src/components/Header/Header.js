@@ -14,7 +14,6 @@ class Header extends React.Component {
     return (
       <header className={styles.component}>
         <Container>
-          <Search />
           <div className={styles.wrapper}>
             <Link to='/' className={styles.logo}>
               <Icon name={icon} />
@@ -25,6 +24,7 @@ class Header extends React.Component {
               <NavLink exact to='/faq' activeClassName='active'>{faqSubPage.navText}</NavLink>
             </nav>
           </div>
+          <Search />
         </Container>
       </header>
     );
