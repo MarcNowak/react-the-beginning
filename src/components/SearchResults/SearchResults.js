@@ -9,7 +9,7 @@ import { settings } from '../../data/dataStore';
 class SearchResults extends React.Component {
 
   static propTypes = {
-    title: PropTypes.node,
+    // title: PropTypes.node,
     cards: PropTypes.array,
     // icon: PropTypes.string.isRequired,
     // addCard: PropTypes.func,
