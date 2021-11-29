@@ -6,7 +6,7 @@ const mapStateToProps = (state, props) => {
   const cardId = props.match.params.cardId;
 
   return {
-    cards: getCardsForSearchResults(state, cardId), 
+    cards: getCardsForSearchResults(state, cardId),
   };
 };
 
